@@ -2,8 +2,8 @@ from turtle import mode
 from fastapi import APIRouter, Depends, HTTPException, status, Query
 from typing import List, Optional
 from uuid import UUID
-from ..db.supabase_client import supabase
-from ..schemas.procedure import Procedure, ProcedureCreate, ProcedureUpdate
+from db.supabase_client import supabase
+from schemas.procedure import Procedure, ProcedureCreate, ProcedureUpdate
 
 router = APIRouter(prefix="/procedures", tags=["Procedures"])
 
