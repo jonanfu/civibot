@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from ..endpoints import citizens, officials, tickets, turnos, chat, departments, procedures, faqs, metrics
+from .endpoints import citizens, officials, tickets, turnos, chat, departments, procedures, faqs, metrics
 api_router = APIRouter(prefix="/api/v1")
 
 api_router.include_router(citizens.router)
