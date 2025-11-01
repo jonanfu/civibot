@@ -1,6 +1,6 @@
 from supabase import create_client
 from supabase.lib.client_options import ClientOptions
-from ..core.config import settings
+from core.config import settings
 
 # Supabase es obligatorio: si falla la configuración, levantar error en arranque
 supabase = create_client(
