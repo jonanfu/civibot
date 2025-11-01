@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException, Query
 from typing import List, Optional, Dict, Any
 import re
-from ..db.supabase_client import supabase
+from db.supabase_client import supabase
 
 print("[api.endpoints.faqs] módulo cargado y router registrado")
 
