@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from prometheus_fastapi_instrumentator import Instrumentator
-from .v1.api import api_router
-from .core.config import settings
+from v1.api import api_router
+from core.config import settings
 
 app = FastAPI(
     title="API de Gestión Gubernamental",
