@@ -1,9 +1,9 @@
 from fastapi import APIRouter, HTTPException, status
 from typing import List
 from uuid import UUID
-from ..db.supabase_client import supabase
-from ..schemas.department import Department, DepartmentCreate, DepartmentUpdate
-from ..schemas.procedure import Procedure
+from db.supabase_client import supabase
+from schemas.department import Department, DepartmentCreate, DepartmentUpdate
+from schemas.procedure import Procedure
 
 router = APIRouter(prefix="/departments", tags=["Departments"])
 
