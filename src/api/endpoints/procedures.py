@@ -1,4 +1,3 @@
-from turtle import mode
 from fastapi import APIRouter, Depends, HTTPException, status, Query
 from typing import List, Optional
 from uuid import UUID
