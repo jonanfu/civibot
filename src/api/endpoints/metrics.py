@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel, Field
 from typing import Optional, Literal
-from ..db.supabase_client import supabase
+from db.supabase_client import supabase
 
 router = APIRouter(prefix="/metrics", tags=["Metrics"])
 
