@@ -5,7 +5,7 @@ from uuid import UUID
 from datetime import datetime
 from db.supabase_client import supabase
 from schemas.turno import Turno, TurnoCreate, TurnoUpdate
-from tickets import get_citizen_by_dni
+from .tickets import get_citizen_by_dni
 
 router = APIRouter(prefix="/turnos", tags=["Turnos"])
 
